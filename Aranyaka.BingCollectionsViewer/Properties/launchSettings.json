@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Aranyaka.BingCollectionsViewer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Aranyaka.BingCollectionsViewer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
