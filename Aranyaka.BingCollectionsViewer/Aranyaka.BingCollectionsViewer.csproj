@@ -2,7 +2,7 @@
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
-        <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+        <TargetPlatformMinVersion>10.0.22621.0</TargetPlatformMinVersion>
         <RootNamespace>Aranyaka.BingCollectionsViewer</RootNamespace>
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <Platforms>x64;ARM64</Platforms>
@@ -13,6 +13,8 @@
         <EnableMsixTooling>true</EnableMsixTooling>
         <Nullable>enable</Nullable>
         <PublishAot>true</PublishAot>
+        <PackageCertificateThumbprint>A017E8AD002B343C3852BCE3C3666B8B8506719D</PackageCertificateThumbprint>
+        <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,7 +23,6 @@
         <Content Include="Assets\Square150x150Logo.scale-200.png" />
         <Content Include="Assets\Square44x44Logo.scale-200.png" />
         <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-        <Content Include="Assets\StoreLogo.png" />
         <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     </ItemGroup>
 
@@ -39,8 +40,14 @@
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="*" />
+        <PackageReference Include="Microsoft.Web.WebView2" Version="*" />
         <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="*" />
+        <PackageReference Include="Microsoft.Windows.SDK.BuildTools.MSIX" Version="*">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Microsoft.WindowsAppSDK" Version="*" />
+        <PackageReference Include="System.Numerics.Tensors" Version="*" />
     </ItemGroup>
 
     <!--
