@@ -19,9 +19,9 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal">
-            <Image Source="/Segoe UI Emoji Regular - Books.png" Width="24" Margin="4"/>
+            <Image Source="/Segoe UI Emoji Regular - Books.png" Width="20" Margin="8,8,4,4"/>
             <TextBlock Text="Bing Collections Viewer" FontFamily="Segoe UI Variable" FontSize="12"
-                       VerticalAlignment="Center" Margin="4,0,0,0"/>
+                       VerticalAlignment="Center" Margin="4,4,0,4"/>
         </StackPanel>
         
         
